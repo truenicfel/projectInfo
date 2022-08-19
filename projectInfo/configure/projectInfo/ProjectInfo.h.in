@@ -1,0 +1,15 @@
+#pragma once
+
+#include <string>
+
+namespace projectInfo {
+
+    constexpr unsigned int VERSION_MAJOR = @PROJECT_INFO_VERSION_MAJOR@;
+    constexpr unsigned int VERSION_MINOR = @PROJECT_INFO_VERSION_MINOR@;
+    constexpr unsigned int VERSION_PATCH = @PROJECT_INFO_VERSION_PATCH@;
+    constexpr unsigned int VERSION_TWEAK = @PROJECT_INFO_VERSION_TWEAK@;
+    static const std::string VERSION = "@PROJECT_INFO_VERSION@";
+    static const std::string GIT_HASH = "@PROJECT_INFO_GIT_HASH@";
+    static const std::string GIT_BRANCH = "@PROJECT_INFO_GIT_BRANCH@";
+
+}
