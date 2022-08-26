@@ -44,7 +44,6 @@ if(USE_CMAKE_HELPERS)
             GIT_TAG 8cb39f37c6b1d1048e1460c3500f681b59530434 # v1.2.0
             )
     FetchContent_MakeAvailable(cmake_helpers)
-    printGitRepoInfo(${cmake_helpers_SOURCE_DIR})
 
     isGitRepository(${CMAKE_HELPERS_GIT_REPOSITORY_PATH})
     if(NOT GIT_REPOSITORY_FOUND)
